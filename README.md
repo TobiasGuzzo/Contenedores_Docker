@@ -12,6 +12,9 @@ El repositorio está organizado de la siguiente manera:
 
 ```text
 Contenedores_Docker/
+├── httpd/
+│   ├── docker-compose.yml   # Receta para levantar Jojos (Pto 9001) y Prueba-apache (Pto 9000)
+│   └── jojos-website/       # Página web montada en el contenedor Jojos
 ├── mariadb/
 │   └── docker-compose.yml   # Receta para levantar MariaDB (Puerto 3306)
 ├── sqlserver/
@@ -41,6 +44,15 @@ Contenedores_Docker/
   * **Usuario Administrador:** `SA`
   * **Contraseña SA:** `Matujack99`
   * **Licencia:** `ACCEPT_EULA=Y` (Edición Developer)
+
+### 🌐 3. Servidores Web Apache (Carpeta `httpd/`)
+Se incluyen dos contenedores HTTPD:
+* **Contenedor:** `Prueba-apache`
+  * **Puerto expuesto:** `9000`
+  * **Descripción:** Contenedor de prueba básico.
+* **Contenedor:** `Jojos`
+  * **Puerto expuesto:** `9001`
+  * **Descripción:** Servidor web que tiene una página web estática montada utilizando el directorio local `jojos-website/`.
 
 ---
 

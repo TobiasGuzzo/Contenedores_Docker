@@ -1,0 +1,17 @@
+services:
+  jojos:
+    image: httpd:latest
+    container_name: Jojos
+    restart: unless-stopped
+    ports:
+      - "9001:80"
+    # Se añade un volumen por defecto para la página web montada
+    volumes:
+      - ./jojos-website:/usr/local/apache2/htdocs
+
+  prueba-apache:
+    image: httpd:latest
+    container_name: Prueba-apache
+    restart: unless-stopped
+    ports:
+      - "9000:80"
