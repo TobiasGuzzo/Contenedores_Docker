@@ -10,7 +10,7 @@ A continuación se detalla la explicación de cada archivo JSON incluido en este
 
 | Archivo | Propósito / Descripción |
 |---------|-------------------------|
-| `ejemplo_task.json` | *[Ejemplo] Archivo de prueba para demostrar la estructura de una tarea. Contiene parámetros de configuración básicos.* |
+| `.vscode/tasks.json` | *Archivo de configuración de tareas de VSCode. Contiene un task (Hostear Web) que ejecuta un túnel SSH inverso usando `localhost.run` para exponer el puerto `9001` (contenedor Jojos) a internet de forma pública. Se ejecuta automáticamente al abrir la carpeta.* |
 | *(Agrega aquí tu archivo)* | *(Agrega aquí la explicación de tu archivo)* |
 
 ---
